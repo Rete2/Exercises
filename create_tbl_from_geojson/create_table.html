@@ -1,0 +1,45 @@
+<!-- task: print all the cities in the geojson cities.js into a table. All cities in Europe should be marked with a star.
+Count the entries and print the number of entries per continent on top of the table -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src='cities.js'></script>
+		<style>
+			.FID_blue {
+						color: blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class='container-fluid'>
+			<p id='length_table'> </p>
+			<ul>
+			 <li>Europe <span class="badge" id='count_eur'></span></li>
+			 <li>Asia <span class="badge" id='count_asia'></span></li>
+			 <li>North America<span class="badge" id='count_amer_n'></span></li>
+			 <li>South America<span class="badge" id='count_amer_s'></span></li>
+			 <li>Australia<span class="badge" id='count_aus'></span></li>
+			 <li>Africa<span class="badge" id='count_afr'></span></li>
+			</ul>
+
+			<table class="table table-bordered table table-striped" id='table_id'>
+				<tr>
+					<th>FID</th>
+					<th>City</th>
+					<th>Country</th>
+					<th>Population</th>
+				</tr>
+			</table>
+
+		</div>
+		<script src='iteration.js'></script>
+	</body>
+</html>

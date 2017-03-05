@@ -1,6 +1,6 @@
 puts "Please give me a number. "
-puts ">"
-n = gets.chomp
+puts '>'
+n = gets.chomp.to_i
 
 def loop1(n)
   loopnr = 0

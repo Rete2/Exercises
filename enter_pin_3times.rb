@@ -1,3 +1,5 @@
+#Task: Let the user enter a PIN 3 times to get to their bank information
+
 puts "Please enter your PIN"
 print "> "
 
@@ -14,9 +16,9 @@ def pincheck
   end
 
 if user_pin == pin_correct
-  puts "This is your bank information"
+  puts "This is your bank information: ..."
 else
-  puts "This was your last try"
+  puts "I'm sorry, this was your last try!"
 end
 end
 

@@ -1,5 +1,10 @@
+# You are the owner of a dog daycare. Things are getting out of hand and you have to start organizing the group of dogs that you have on hand.
+#You write a program to help you organize the dogs.
+#For each dog you want to keep track of: breed, name, owner's name and if they are friendly
+#The dogs can bark, eat, play or sleep.
+#TASK 1: Write a program that has 4 different dogs. Each dog should perform one of the actions it can do.
+
 class Dog
-  @@no_dogs=0           #global variable, don't use!!!!!
   attr_accessor :name, :breed, :owner, :friendly
 
   def initialize(name, breed, owner, friendly)
@@ -8,14 +13,6 @@ class Dog
     @owner = owner
     @friendly = friendly
   end
-
-  # def name=(name)   #setter
-  #   @name = name
-  # end
-  #
-  # def name      #getter
-  #   @name
-  # end
 
   def bark
     puts "Ruff!Ruff!"

@@ -1,4 +1,3 @@
-
 def fizzbuzz
   loopnr = 1
   while loopnr <= 100
@@ -13,12 +12,6 @@ def fizzbuzz
     end
     loopnr += 1
   end
-
 end
 
 fizzbuzz
-
-
-#(1..100) --> Range (0...100) --> last number not included
-#.map --> iterates through element
-#[1,2,3,4][0] --> 1 it's the same as: array = [1,2,3,4] array[0]
